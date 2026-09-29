@@ -2,7 +2,7 @@ package lab1;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-// Этап 2: 16 замков для корзин, общие атомары.
+// Этап 2: 16 локов для корзин, общие атомары.
 public final class StripedCollector implements MetricsCollector {
     private static final int GROUPS = 16;
 
