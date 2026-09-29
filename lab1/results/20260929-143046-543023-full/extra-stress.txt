@@ -1,0 +1,12 @@
+Дополнительная проверка после полного запуска
+
+double-buffered, 100000 snapshots:
+broken=0, less=0, greater=0, final_difference=0, calls=37792319, final_count=37792319
+
+double-buffered-broken, repeat 1, 10000 snapshots:
+broken=9698, less=289, greater=9409, final_difference=-301, calls=173620, final_count=173319
+
+double-buffered-broken, repeat 2, 10000 snapshots:
+broken=9948, less=5888, greater=4060, final_difference=912, calls=4211013, final_count=4211925
+
+The broken variant can lose records or count some records twice. Exact values depend on thread scheduling.

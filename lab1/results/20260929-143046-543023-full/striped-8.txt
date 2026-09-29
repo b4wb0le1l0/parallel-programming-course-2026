@@ -1,0 +1,10 @@
+variant,threads,trial,operations,seconds,ops_per_second
+striped,8,1,44241213,5.005022375,8839363.680
+striped,8,2,44512742,5.005017625,8893623.427
+striped,8,3,43093055,5.005023458,8609960.645
+striped,8,4,41805294,5.005021292,8352670.560
+striped,8,5,43608408,5.005016666,8712939.618
+MEDIAN,striped,8,8712939.618
+
+striped, T=8: warmup 5.000 s, 5 repeats
+snapshot.count=260937067, calls including warmup=260937067

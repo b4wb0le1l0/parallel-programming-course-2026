@@ -1,0 +1,10 @@
+variant,threads,median_mops
+sequential,1,534.488833
+empty,1,283.443685
+empty,2,130.415062
+empty,4,74.521042
+empty,8,103.526094
+locked,1,262.193798
+locked,2,57.707245
+locked,4,28.963913
+locked,8,11.037349

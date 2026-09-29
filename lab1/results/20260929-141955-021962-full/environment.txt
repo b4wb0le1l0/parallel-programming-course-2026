@@ -1,0 +1,5 @@
+java=25.0.1
+vm=OpenJDK 64-Bit Server VM
+os=Mac OS X
+arch=aarch64
+processors=14

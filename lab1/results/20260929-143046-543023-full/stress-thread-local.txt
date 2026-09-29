@@ -1,0 +1,3 @@
+variant,snapshots,broken,broken_percent,less,greater,final_difference,calls,final_count
+thread-local,10000,8924,89.2400,8924,0,0,15092458,15092458
+

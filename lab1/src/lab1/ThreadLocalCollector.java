@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicLongArray;
 
-// Этап 3: каждый пишущий поток изменяет только своё состояние.
+// Этап 3: на каждый поток свои данные.
 public final class ThreadLocalCollector implements MetricsCollector {
     private static final class ThreadState {
         final AtomicLongArray buckets = new AtomicLongArray(256);

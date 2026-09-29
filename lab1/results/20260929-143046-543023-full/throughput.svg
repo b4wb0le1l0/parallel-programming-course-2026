@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="480" viewBox="0 0 840 480">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="sans-serif" font-size="13" fill="#172033">
+<text x="90" y="28" font-size="20">Stages 0–4: record throughput</text>
+<text x="90" y="49">Million record() calls per second; median of five runs</text>
+<path d="M 90 395.0 H 800" stroke="#e0e5ed"/>
+<text x="80" y="399.0" text-anchor="end">0.0</text>
+<path d="M 90 329.0 H 800" stroke="#e0e5ed"/>
+<text x="80" y="333.0" text-anchor="end">466.3</text>
+<path d="M 90 263.0 H 800" stroke="#e0e5ed"/>
+<text x="80" y="267.0" text-anchor="end">932.5</text>
+<path d="M 90 196.99999999999997 H 800" stroke="#e0e5ed"/>
+<text x="80" y="200.99999999999997" text-anchor="end">1398.8</text>
+<path d="M 90 131.0 H 800" stroke="#e0e5ed"/>
+<text x="80" y="135.0" text-anchor="end">1865.1</text>
+<path d="M 90 65.0 H 800" stroke="#e0e5ed"/>
+<text x="80" y="69.0" text-anchor="end">2331.3</text>
+<text x="90.0" y="417" text-anchor="middle">1</text>
+<text x="191.42857142857142" y="417" text-anchor="middle">2</text>
+<text x="394.2857142857143" y="417" text-anchor="middle">4</text>
+<text x="800.0" y="417" text-anchor="middle">8</text>
+<text x="445.0" y="440" text-anchor="middle">Thread count</text>
+<polyline points="90.0,318.83037263734894" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<circle cx="90.0" cy="318.83037263734894" r="4" fill="#2563eb"><title>sequential T=1: 538.108729 M ops/s</title></circle>
+<circle cx="90" cy="438" r="4" fill="#2563eb"/>
+<text x="100" y="442">Stage 0: no lock</text>
+<polyline points="90.0,355.0188561524071 191.42857142857142,391.28026697455255 394.2857142857143,378.07561195358045 800.0,384.2562358737417" fill="none" stroke="#059669" stroke-width="2.5"/>
+<circle cx="90.0" cy="355.0188561524071" r="4" fill="#059669"><title>empty T=1: 282.451198 M ops/s</title></circle>
+<circle cx="191.42857142857142" cy="391.28026697455255" r="4" fill="#059669"><title>empty T=2: 26.278464 M ops/s</title></circle>
+<circle cx="394.2857142857143" cy="378.07561195358045" r="4" fill="#059669"><title>empty T=4: 119.564205 M ops/s</title></circle>
+<circle cx="800.0" cy="384.2562358737417" r="4" fill="#059669"><title>empty T=8: 75.900506 M ops/s</title></circle>
+<circle cx="335" cy="438" r="4" fill="#059669"/>
+<text x="345" y="442">Stage 1: empty lock</text>
+<polyline points="90.0,358.4367798876996 191.42857142857142,390.54056091480203 394.2857142857143,391.7145083407863 800.0,393.361882592757" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<circle cx="90.0" cy="358.4367798876996" r="4" fill="#dc2626"><title>locked T=1: 258.304899 M ops/s</title></circle>
+<circle cx="191.42857142857142" cy="390.54056091480203" r="4" fill="#dc2626"><title>locked T=2: 31.504199 M ops/s</title></circle>
+<circle cx="394.2857142857143" cy="391.7145083407863" r="4" fill="#dc2626"><title>locked T=4: 23.210718 M ops/s</title></circle>
+<circle cx="800.0" cy="393.361882592757" r="4" fill="#dc2626"><title>locked T=8: 11.572661 M ops/s</title></circle>
+<circle cx="580" cy="438" r="4" fill="#dc2626"/>
+<text x="590" y="442">Stage 1: global lock</text>
+<polyline points="90.0,359.01769502157964 191.42857142857142,392.8699778896234 394.2857142857143,393.1975123074182 800.0,393.7666778900494" fill="none" stroke="#d97706" stroke-width="2.5"/>
+<circle cx="90.0" cy="359.01769502157964" r="4" fill="#d97706"><title>striped T=1: 254.200960 M ops/s</title></circle>
+<circle cx="191.42857142857142" cy="392.8699778896234" r="4" fill="#d97706"><title>striped T=2: 15.047776 M ops/s</title></circle>
+<circle cx="394.2857142857143" cy="393.1975123074182" r="4" fill="#d97706"><title>striped T=4: 12.733873 M ops/s</title></circle>
+<circle cx="800.0" cy="393.7666778900494" r="4" fill="#d97706"><title>striped T=8: 8.712940 M ops/s</title></circle>
+<circle cx="90" cy="462" r="4" fill="#d97706"/>
+<text x="100" y="466">Stage 2: 16 locks</text>
+<polyline points="90.0,349.13999297053624 191.42857142857142,305.4772567720793 394.2857142857143,221.43994921794808 800.0,100.35714285714289" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+<circle cx="90.0" cy="349.13999297053624" r="4" fill="#7c3aed"><title>thread-local T=1: 323.983075 M ops/s</title></circle>
+<circle cx="191.42857142857142" cy="305.4772567720793" r="4" fill="#7c3aed"><title>thread-local T=2: 632.443288 M ops/s</title></circle>
+<circle cx="394.2857142857143" cy="221.43994921794808" r="4" fill="#7c3aed"><title>thread-local T=4: 1226.134111 M ops/s</title></circle>
+<circle cx="800.0" cy="100.35714285714289" r="4" fill="#7c3aed"><title>thread-local T=8: 2081.536944 M ops/s</title></circle>
+<circle cx="335" cy="462" r="4" fill="#7c3aed"/>
+<text x="345" y="466">Stage 3: thread-local state</text>
+<polyline points="90.0,361.78433172935314 191.42857142857142,327.9570450032261 394.2857142857143,265.008304979566 800.0,149.1080780939666" fill="none" stroke="#0891b2" stroke-width="2.5"/>
+<circle cx="90.0" cy="361.78433172935314" r="4" fill="#0891b2"><title>double-buffered T=1: 234.655750 M ops/s</title></circle>
+<circle cx="191.42857142857142" cy="327.9570450032261" r="4" fill="#0891b2"><title>double-buffered T=2: 473.632346 M ops/s</title></circle>
+<circle cx="394.2857142857143" cy="265.008304979566" r="4" fill="#0891b2"><title>double-buffered T=4: 918.340659 M ops/s</title></circle>
+<circle cx="800.0" cy="149.1080780939666" r="4" fill="#0891b2"><title>double-buffered T=8: 1737.130588 M ops/s</title></circle>
+<circle cx="580" cy="462" r="4" fill="#0891b2"/>
+<text x="590" y="466">Stage 4: double buffer</text>
+</g></svg>

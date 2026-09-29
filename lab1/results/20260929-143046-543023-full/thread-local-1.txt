@@ -1,0 +1,10 @@
+variant,threads,trial,operations,seconds,ops_per_second
+thread-local,1,1,1877277750,5.005012792,375079510.886
+thread-local,1,2,1621461016,5.004770750,323983074.749
+thread-local,1,3,1586436078,5.001919167,317165476.897
+thread-local,1,4,1637738103,5.004198333,327272820.544
+thread-local,1,5,1620779402,5.004353542,323873880.692
+MEDIAN,thread-local,1,323983074.749
+
+thread-local, T=1: warmup 5.000 s, 5 repeats
+snapshot.count=10320121138, calls including warmup=10320121138

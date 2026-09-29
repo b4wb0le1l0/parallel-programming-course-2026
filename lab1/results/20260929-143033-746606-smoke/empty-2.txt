@@ -1,0 +1,6 @@
+variant,threads,trial,operations,seconds,ops_per_second
+empty,2,1,3762309,0.052744375,71330999.751
+MEDIAN,empty,2,71330999.751
+
+empty, T=2: warmup 0.050 s, 1 repeats
+snapshot.count=0, calls including warmup=7683868

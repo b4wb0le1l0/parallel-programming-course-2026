@@ -73,7 +73,7 @@ public final class Bench {
             Thread.sleep(millis);
         } finally {
             signal.stop = true;
-            t1 = System.nanoTime(); // та же граница замера, что в задании
+            t1 = System.nanoTime();
             start.countDown(); // освобождает ожидающих и при прерывании main
             joinAll(threads);
         }

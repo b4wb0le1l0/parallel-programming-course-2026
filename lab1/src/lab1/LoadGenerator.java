@@ -20,13 +20,12 @@ public class LoadGenerator {
             accumulated += weights[k] / totalWeight;
             boundaries[k] = accumulated;
         }
-        boundaries[1023] = 1.0; // убираем погрешность сложения дробей
+        boundaries[1023] = 1.0;
 
         Random random = new Random(SEED);
         long[] values = new long[SIZE];
         for (int i = 0; i < values.length; i++) {
             double point = random.nextDouble();
-            // Первая граница справа от точки определяет выбранное число.
             for (int k = 1; k < boundaries.length; k++) {
                 if (point < boundaries[k]) {
                     values[i] = k;

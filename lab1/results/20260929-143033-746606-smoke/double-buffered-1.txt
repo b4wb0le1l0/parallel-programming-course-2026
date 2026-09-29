@@ -1,0 +1,6 @@
+variant,threads,trial,operations,seconds,ops_per_second
+double-buffered,1,1,13926616,0.053649083,259587214.193
+MEDIAN,double-buffered,1,259587214.193
+
+double-buffered, T=1: warmup 0.050 s, 1 repeats
+snapshot.count=26794872, calls including warmup=26794872

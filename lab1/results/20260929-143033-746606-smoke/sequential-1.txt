@@ -1,0 +1,6 @@
+variant,threads,trial,operations,seconds,ops_per_second
+sequential,1,1,28947516,0.055017791,526148278.109
+MEDIAN,sequential,1,526148278.109
+
+sequential, T=1: warmup 0.050 s, 1 repeats
+snapshot.count=55179325, calls including warmup=55179325

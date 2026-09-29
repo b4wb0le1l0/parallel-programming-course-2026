@@ -1,0 +1,5 @@
+Apple M4 Pro
+14 cores: 10 Performance + 4 Efficiency
+MacBook Pro
+24 GB RAM
+Source: system_profiler SPHardwareDataType, 2026-09-29

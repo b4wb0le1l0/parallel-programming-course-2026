@@ -1,0 +1,5 @@
+variant,snapshots,broken,broken_percent,less,greater,final_difference,calls,final_count
+striped,10000,4725,47.2500,3959,766,0,335385,335385
+thread-local,10000,8924,89.2400,8924,0,0,15092458,15092458
+double-buffered,10000,0,0.0000,0,0,0,104934,104934
+double-buffered-broken,10000,9662,96.6200,0,9662,-245,108042,107797

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-// Этап 4: у каждого потока два обычных буфера.
+// Этап 4: у каждого потока два буфера.
 public class DoubleBufferedCollector implements MetricsCollector {
     private static final int NOWHERE = -1;
 

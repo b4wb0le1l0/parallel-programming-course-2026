@@ -3,7 +3,7 @@ package lab1;
 import java.util.Locale;
 import java.util.concurrent.CountDownLatch;
 
-// Стресс-тест этапов 2–4: снимки делаются одновременно с записью.
+// Стресс-тест этапы 2–4: снимки в момент с записью.
 public final class ConsistencyCheck {
     private static final class StopSignal {
         volatile boolean stop;

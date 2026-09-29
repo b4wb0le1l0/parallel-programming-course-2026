@@ -1,6 +1,6 @@
 package lab1;
 
-// Этап 0: этот объект пока используется только одним потоком.
+// Этап 0: один поток
 public class SequentialCollector implements MetricsCollector {
     private final long[] buckets = new long[256];
     private long count;
@@ -68,12 +68,12 @@ public class SequentialCollector implements MetricsCollector {
 
             Snapshot result = collector.snapshot();
 
-            System.out.println(result.count()); // 2
-            System.out.println(result.sum());   // 10
-            System.out.println(result.min());   // 3
-            System.out.println(result.max());   // 7
-            System.out.println(result.p50());   // 0
-            System.out.println(result.p99());   // 4
+            System.out.println(result.count());
+            System.out.println(result.sum());
+            System.out.println(result.min());
+            System.out.println(result.max());
+            System.out.println(result.p50());
+            System.out.println(result.p99());
         }
     }
 }

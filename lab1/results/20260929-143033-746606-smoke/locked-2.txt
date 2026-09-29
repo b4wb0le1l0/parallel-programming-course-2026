@@ -1,0 +1,6 @@
+variant,threads,trial,operations,seconds,ops_per_second
+locked,2,1,2430749,0.051993125,46751354.145
+MEDIAN,locked,2,46751354.145
+
+locked, T=2: warmup 0.050 s, 1 repeats
+snapshot.count=4955886, calls including warmup=4955886

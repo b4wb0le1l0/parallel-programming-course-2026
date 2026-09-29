@@ -1,0 +1,3 @@
+variant,snapshots,broken,broken_percent,less,greater,final_difference,calls,final_count
+striped,10000,4446,44.4600,3758,688,0,173931,173931
+
