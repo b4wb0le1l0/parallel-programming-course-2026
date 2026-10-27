@@ -1,0 +1,7 @@
+  A  balance -> 100
+  A  window
+  A  balance -> 100
+  A  balance = 0
+  B  balance -> 0
+  B  window
+schedule AAAB -> ok

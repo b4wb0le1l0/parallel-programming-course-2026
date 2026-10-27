@@ -1,0 +1,9 @@
+  A  lock mu
+  A  unlock mu
+  A  window
+  A  lock mu
+  A  unlock mu
+  B  lock mu
+  B  unlock mu
+  B  window
+schedule AAAABB -> ok

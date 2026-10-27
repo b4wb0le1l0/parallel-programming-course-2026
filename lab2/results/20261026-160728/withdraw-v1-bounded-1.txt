@@ -1,0 +1,2 @@
+explored 4 schedules, 2 fail  (0.01 s)
+first failing: AABBBBAA -> OVERDRAFT balance=-100 results=true,true

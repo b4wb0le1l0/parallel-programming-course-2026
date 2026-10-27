@@ -1,0 +1,6 @@
+Exception in thread "main" java.lang.IllegalArgumentException: Replay trace ended at decision 5
+	at lab2.Strategies$Replay.pick(Strategies.java:23)
+	at lab2.Scheduler.run(Scheduler.java:74)
+	at lab2.Main.runOnce(Main.java:17)
+	at lab2.Main.single(Main.java:24)
+	at lab2.Main.main(Main.java:69)

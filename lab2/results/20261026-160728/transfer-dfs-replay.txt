@@ -1,0 +1,5 @@
+  A  lock a
+  A  window
+  B  lock b
+  B  window
+schedule AB -> DEADLOCK held={a:A, b:B}

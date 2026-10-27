@@ -1,0 +1,9 @@
+  A  balance -> 100
+  A  window
+  A  balance -> 100
+  B  balance -> 100
+  B  window
+  A  balance = 0
+  B  balance -> 0
+  B  balance = -100
+schedule AABABB -> OVERDRAFT balance=-100 results=true,true

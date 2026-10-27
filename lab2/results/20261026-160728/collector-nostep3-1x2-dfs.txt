@@ -1,0 +1,2 @@
+explored 1666 schedules, 105 fail  (0.40 s)
+first failing: AAAAAABBBAABAAB -> LOST 1 record(s): counted 1 of 2

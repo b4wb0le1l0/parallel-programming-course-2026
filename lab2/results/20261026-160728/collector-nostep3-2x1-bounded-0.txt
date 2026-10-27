@@ -1,0 +1,1 @@
+explored 6 schedules, 0 fail  (0.02 s)

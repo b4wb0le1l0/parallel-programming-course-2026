@@ -1,0 +1,16 @@
+  A  active -> 0
+  A  inside[W1] = 0
+  A  cnt[W1][0] -> 0
+  A  cnt[W1][0] = 1
+  A  inside[W1] = -1
+  A  active -> 0
+  B  active -> 0
+  B  active = 1
+  B  await done
+  A  inside[W1] = 0
+  A  cnt[W1][0] -> 1
+  B  cnt[W1][0] -> 1
+  A  cnt[W1][0] = 2
+  A  inside[W1] = -1
+  B  cnt[W1][0] = 0
+schedule AAAAAABBBAABAAB -> LOST 1 record(s): counted 1 of 2

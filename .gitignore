@@ -1,1 +1,6 @@
 /out
+**/out/
+*.class
+__pycache__/
+.idea/
+.DS_Store

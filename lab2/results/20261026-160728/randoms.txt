@@ -1,0 +1,3 @@
+random: 1000 seeds, 501 fail (50.1%)
+first failing seed 0: BBAABBAA -> OVERDRAFT balance=-100 results=true,true
+replay BBAABBAA: same failure 10/10

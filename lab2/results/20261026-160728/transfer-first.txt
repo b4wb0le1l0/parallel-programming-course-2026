@@ -1,0 +1,11 @@
+  A  lock a
+  A  window
+  A  lock b
+  A  unlock b
+  A  unlock a
+  B  lock b
+  B  window
+  B  lock a
+  B  unlock a
+  B  unlock b
+schedule AAAABBBB -> ok

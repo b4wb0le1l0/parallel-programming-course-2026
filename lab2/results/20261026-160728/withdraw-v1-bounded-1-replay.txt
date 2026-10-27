@@ -1,0 +1,11 @@
+  A  lock mu
+  A  unlock mu
+  A  window
+  B  lock mu
+  B  unlock mu
+  B  window
+  B  lock mu
+  B  unlock mu
+  A  lock mu
+  A  unlock mu
+schedule AABBBBAA -> OVERDRAFT balance=-100 results=true,true

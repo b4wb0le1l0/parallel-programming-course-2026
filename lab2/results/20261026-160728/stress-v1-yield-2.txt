@@ -1,0 +1,1 @@
+stress V1, window=yield: 10000 runs, 5827 overdrafts (58.27%)

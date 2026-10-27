@@ -1,0 +1,1 @@
+stress V2, window=none: 10000 runs, 0 overdrafts (0.00%)

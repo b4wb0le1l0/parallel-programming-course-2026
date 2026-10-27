@@ -1,0 +1,1090 @@
+[
+  {
+    "label": "checks",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.SchedulerCheck"
+    ],
+    "seconds": 0.614671042,
+    "returncode": 0,
+    "output": "All scheduler checks passed\n"
+  },
+  {
+    "label": "stress-v1-none-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "none",
+      "v1"
+    ],
+    "seconds": 0.19788833400000017,
+    "returncode": 0,
+    "output": "stress V1, window=none: 10000 runs, 1 overdrafts (0.01%)\n"
+  },
+  {
+    "label": "stress-v1-none-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "none",
+      "v1"
+    ],
+    "seconds": 0.19151837500000002,
+    "returncode": 0,
+    "output": "stress V1, window=none: 10000 runs, 4 overdrafts (0.04%)\n"
+  },
+  {
+    "label": "stress-v1-none-3",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "none",
+      "v1"
+    ],
+    "seconds": 0.19222399999999995,
+    "returncode": 0,
+    "output": "stress V1, window=none: 10000 runs, 1 overdrafts (0.01%)\n"
+  },
+  {
+    "label": "stress-v1-yield-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "yield",
+      "v1"
+    ],
+    "seconds": 0.23972454199999982,
+    "returncode": 0,
+    "output": "stress V1, window=yield: 10000 runs, 5465 overdrafts (54.65%)\n"
+  },
+  {
+    "label": "stress-v1-yield-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "yield",
+      "v1"
+    ],
+    "seconds": 0.24946079099999996,
+    "returncode": 0,
+    "output": "stress V1, window=yield: 10000 runs, 5827 overdrafts (58.27%)\n"
+  },
+  {
+    "label": "stress-v1-yield-3",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "yield",
+      "v1"
+    ],
+    "seconds": 0.2707174590000001,
+    "returncode": 0,
+    "output": "stress V1, window=yield: 10000 runs, 5711 overdrafts (57.11%)\n"
+  },
+  {
+    "label": "stress-v2-none-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "none",
+      "v2"
+    ],
+    "seconds": 0.17254000000000014,
+    "returncode": 0,
+    "output": "stress V2, window=none: 10000 runs, 0 overdrafts (0.00%)\n"
+  },
+  {
+    "label": "stress-v2-none-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "none",
+      "v2"
+    ],
+    "seconds": 0.1890185419999999,
+    "returncode": 0,
+    "output": "stress V2, window=none: 10000 runs, 0 overdrafts (0.00%)\n"
+  },
+  {
+    "label": "stress-v2-none-3",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Stress",
+      "10000",
+      "none",
+      "v2"
+    ],
+    "seconds": 0.17924024999999988,
+    "returncode": 0,
+    "output": "stress V2, window=none: 10000 runs, 0 overdrafts (0.00%)\n"
+  },
+  {
+    "label": "withdraw-v0-first",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v0",
+      "first",
+      "log"
+    ],
+    "seconds": 0.05840041700000009,
+    "returncode": 0,
+    "output": "  A  balance -> 100\n  A  window\n  A  balance -> 100\n  A  balance = 0\n  B  balance -> 0\n  B  window\nschedule AAAB -> ok\n"
+  },
+  {
+    "label": "withdraw-v1-first",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "first",
+      "log"
+    ],
+    "seconds": 0.07187462499999997,
+    "returncode": 0,
+    "output": "  A  lock mu\n  A  unlock mu\n  A  window\n  A  lock mu\n  A  unlock mu\n  B  lock mu\n  B  unlock mu\n  B  window\nschedule AAAABB -> ok\n"
+  },
+  {
+    "label": "transfer-first",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "transfer",
+      "first",
+      "log"
+    ],
+    "seconds": 0.07151970800000029,
+    "returncode": 0,
+    "output": "  A  lock a\n  A  window\n  A  lock b\n  A  unlock b\n  A  unlock a\n  B  lock b\n  B  window\n  B  lock a\n  B  unlock a\n  B  unlock b\nschedule AAAABBBB -> ok\n"
+  },
+  {
+    "label": "transfer-deadlock",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "transfer",
+      "replay",
+      "AB",
+      "log"
+    ],
+    "seconds": 0.06927908300000007,
+    "returncode": 0,
+    "output": "  A  lock a\n  A  window\n  B  lock b\n  B  window\nschedule AB -> DEADLOCK held={a:A, b:B}\n"
+  },
+  {
+    "label": "invalid-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "replay",
+      "AABB"
+    ],
+    "seconds": 0.0552664169999999,
+    "returncode": 1,
+    "output": "Exception in thread \"main\" java.lang.IllegalArgumentException: Replay trace ended at decision 5\n\tat lab2.Strategies$Replay.pick(Strategies.java:23)\n\tat lab2.Scheduler.run(Scheduler.java:74)\n\tat lab2.Main.runOnce(Main.java:17)\n\tat lab2.Main.single(Main.java:24)\n\tat lab2.Main.main(Main.java:69)\n"
+  },
+  {
+    "label": "randoms",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "randoms",
+      "1000"
+    ],
+    "seconds": 0.303602583,
+    "returncode": 0,
+    "output": "random: 1000 seeds, 501 fail (50.1%)\nfirst failing seed 0: BBAABBAA -> OVERDRAFT balance=-100 results=true,true\nreplay BBAABBAA: same failure 10/10\n"
+  },
+  {
+    "label": "random-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "replay",
+      "BBAABBAA",
+      "log"
+    ],
+    "seconds": 0.06400554199999986,
+    "returncode": 0,
+    "output": "  B  lock mu\n  B  unlock mu\n  B  window\n  A  lock mu\n  A  unlock mu\n  A  window\n  B  lock mu\n  B  unlock mu\n  A  lock mu\n  A  unlock mu\nschedule BBAABBAA -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "withdraw-v1-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "dfs"
+    ],
+    "seconds": 0.08519491699999993,
+    "returncode": 0,
+    "output": "explored 6 schedules, 4 fail  (0.01 s)\nfirst failing: AABBAABB -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "withdraw-v1-dfs-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "replay",
+      "AABBAABB",
+      "log"
+    ],
+    "seconds": 0.06504508399999986,
+    "returncode": 0,
+    "output": "  A  lock mu\n  A  unlock mu\n  A  window\n  B  lock mu\n  B  unlock mu\n  B  window\n  A  lock mu\n  A  unlock mu\n  B  lock mu\n  B  unlock mu\nschedule AABBAABB -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "withdraw-v2-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v2",
+      "dfs"
+    ],
+    "seconds": 0.0807575410000001,
+    "returncode": 0,
+    "output": "explored 2 schedules, 0 fail  (0.01 s)\n"
+  },
+  {
+    "label": "withdraw-v0-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v0",
+      "dfs"
+    ],
+    "seconds": 0.07678275000000001,
+    "returncode": 0,
+    "output": "explored 20 schedules, 18 fail  (0.02 s)\nfirst failing: AABABB -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "withdraw-v0-dfs-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v0",
+      "replay",
+      "AABABB",
+      "log"
+    ],
+    "seconds": 0.06679924999999987,
+    "returncode": 0,
+    "output": "  A  balance -> 100\n  A  window\n  A  balance -> 100\n  B  balance -> 100\n  B  window\n  A  balance = 0\n  B  balance -> 0\n  B  balance = -100\nschedule AABABB -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "transfer-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "transfer",
+      "dfs"
+    ],
+    "seconds": 0.08406025000000028,
+    "returncode": 0,
+    "output": "explored 6 schedules, 2 fail  (0.01 s)\nfirst failing: AB -> DEADLOCK held={a:A, b:B}\n"
+  },
+  {
+    "label": "transfer-dfs-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "transfer",
+      "replay",
+      "AB",
+      "log"
+    ],
+    "seconds": 0.0756893750000005,
+    "returncode": 0,
+    "output": "  A  lock a\n  A  window\n  B  lock b\n  B  window\nschedule AB -> DEADLOCK held={a:A, b:B}\n"
+  },
+  {
+    "label": "withdraw-v1-bounded-0",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "bounded",
+      "0"
+    ],
+    "seconds": 0.07945529100000037,
+    "returncode": 0,
+    "output": "explored 2 schedules, 0 fail  (0.01 s)\n"
+  },
+  {
+    "label": "withdraw-v1-bounded-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "bounded",
+      "1"
+    ],
+    "seconds": 0.07209612500000073,
+    "returncode": 0,
+    "output": "explored 4 schedules, 2 fail  (0.01 s)\nfirst failing: AABBBBAA -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "withdraw-v1-bounded-1-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "replay",
+      "AABBBBAA",
+      "log"
+    ],
+    "seconds": 0.06147745799999971,
+    "returncode": 0,
+    "output": "  A  lock mu\n  A  unlock mu\n  A  window\n  B  lock mu\n  B  unlock mu\n  B  window\n  B  lock mu\n  B  unlock mu\n  A  lock mu\n  A  unlock mu\nschedule AABBBBAA -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "withdraw-v1-bounded-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "bounded",
+      "2"
+    ],
+    "seconds": 0.07963183300000054,
+    "returncode": 0,
+    "output": "explored 6 schedules, 4 fail  (0.01 s)\nfirst failing: AABBAABB -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "withdraw-v1-bounded-2-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "withdraw-v1",
+      "replay",
+      "AABBAABB",
+      "log"
+    ],
+    "seconds": 0.07788829199999991,
+    "returncode": 0,
+    "output": "  A  lock mu\n  A  unlock mu\n  A  window\n  B  lock mu\n  B  unlock mu\n  B  window\n  A  lock mu\n  A  unlock mu\n  B  lock mu\n  B  unlock mu\nschedule AABBAABB -> OVERDRAFT balance=-100 results=true,true\n"
+  },
+  {
+    "label": "transfer-bounded-0",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "transfer",
+      "bounded",
+      "0"
+    ],
+    "seconds": 0.08781791599999966,
+    "returncode": 0,
+    "output": "explored 2 schedules, 0 fail  (0.01 s)\n"
+  },
+  {
+    "label": "transfer-bounded-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "transfer",
+      "bounded",
+      "1"
+    ],
+    "seconds": 0.0818645,
+    "returncode": 0,
+    "output": "explored 6 schedules, 2 fail  (0.01 s)\nfirst failing: AB -> DEADLOCK held={a:A, b:B}\n"
+  },
+  {
+    "label": "transfer-bounded-1-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "transfer",
+      "replay",
+      "AB",
+      "log"
+    ],
+    "seconds": 0.07342145800000033,
+    "returncode": 0,
+    "output": "  A  lock a\n  A  window\n  B  lock b\n  B  window\nschedule AB -> DEADLOCK held={a:A, b:B}\n"
+  },
+  {
+    "label": "collector-nostep3-1x1-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-1x1",
+      "dfs"
+    ],
+    "seconds": 0.11768416600000009,
+    "returncode": 0,
+    "output": "explored 106 schedules, 12 fail  (0.05 s)\nfirst failing: ABBBAABAAB -> LOST 1 record(s): counted 0 of 1\n"
+  },
+  {
+    "label": "collector-nostep3-1x1-dfs-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-1x1",
+      "replay",
+      "ABBBAABAAB",
+      "log"
+    ],
+    "seconds": 0.06505675000000011,
+    "returncode": 0,
+    "output": "  A  active -> 0\n  B  active -> 0\n  B  active = 1\n  B  await done\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 0\n  B  cnt[W1][0] -> 0\n  A  cnt[W1][0] = 1\n  A  inside[W1] = -1\n  B  cnt[W1][0] = 0\nschedule ABBBAABAAB -> LOST 1 record(s): counted 0 of 1\n"
+  },
+  {
+    "label": "collector-plain-1x1-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-plain-1x1",
+      "dfs"
+    ],
+    "seconds": 0.09293512500000034,
+    "returncode": 0,
+    "output": "explored 29 schedules, 0 fail  (0.02 s)\n"
+  },
+  {
+    "label": "collector-acqrel-1x1-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-acqrel-1x1",
+      "dfs"
+    ],
+    "seconds": 0.263498459,
+    "returncode": 0,
+    "output": "explored 636 schedules, 0 fail  (0.19 s)\n"
+  },
+  {
+    "label": "collector-ok-1x1-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-ok-1x1",
+      "dfs"
+    ],
+    "seconds": 0.24160812499999995,
+    "returncode": 0,
+    "output": "explored 636 schedules, 0 fail  (0.18 s)\n"
+  },
+  {
+    "label": "collector-nostep3-1x2-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-1x2",
+      "dfs"
+    ],
+    "seconds": 0.4532699170000001,
+    "returncode": 0,
+    "output": "explored 1666 schedules, 105 fail  (0.40 s)\nfirst failing: AAAAAABBBAABAAB -> LOST 1 record(s): counted 1 of 2\n"
+  },
+  {
+    "label": "collector-nostep3-1x2-dfs-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-1x2",
+      "replay",
+      "AAAAAABBBAABAAB",
+      "log"
+    ],
+    "seconds": 0.07319970799999975,
+    "returncode": 0,
+    "output": "  A  active -> 0\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 0\n  A  cnt[W1][0] = 1\n  A  inside[W1] = -1\n  A  active -> 0\n  B  active -> 0\n  B  active = 1\n  B  await done\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 1\n  B  cnt[W1][0] -> 1\n  A  cnt[W1][0] = 2\n  A  inside[W1] = -1\n  B  cnt[W1][0] = 0\nschedule AAAAAABBBAABAAB -> LOST 1 record(s): counted 1 of 2\n"
+  },
+  {
+    "label": "collector-nostep3-1x3-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-1x3",
+      "dfs"
+    ],
+    "seconds": 2.5596855000000005,
+    "returncode": 0,
+    "output": "explored 9931 schedules, 348 fail  (2.49 s)\nfirst failing: AAAAAAAAAAABBBAABAAB -> LOST 1 record(s): counted 2 of 3\n"
+  },
+  {
+    "label": "collector-nostep3-1x3-dfs-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-1x3",
+      "replay",
+      "AAAAAAAAAAABBBAABAAB",
+      "log"
+    ],
+    "seconds": 0.06375879199999979,
+    "returncode": 0,
+    "output": "  A  active -> 0\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 0\n  A  cnt[W1][0] = 1\n  A  inside[W1] = -1\n  A  active -> 0\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 1\n  A  cnt[W1][0] = 2\n  A  inside[W1] = -1\n  A  active -> 0\n  B  active -> 0\n  B  active = 1\n  B  await done\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 2\n  B  cnt[W1][0] -> 2\n  A  cnt[W1][0] = 3\n  A  inside[W1] = -1\n  B  cnt[W1][0] = 0\nschedule AAAAAAAAAAABBBAABAAB -> LOST 1 record(s): counted 2 of 3\n"
+  },
+  {
+    "label": "collector-nostep3-1x4-dfs",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-1x4",
+      "dfs"
+    ],
+    "seconds": 10.040816667,
+    "returncode": 0,
+    "output": "explored 37151 schedules, 816 fail  (9.97 s)\nfirst failing: AAAAAAAAAAAAAAAABBBAABAAB -> LOST 1 record(s): counted 3 of 4\n"
+  },
+  {
+    "label": "collector-nostep3-1x4-dfs-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-1x4",
+      "replay",
+      "AAAAAAAAAAAAAAAABBBAABAAB",
+      "log"
+    ],
+    "seconds": 0.06489520899999945,
+    "returncode": 0,
+    "output": "  A  active -> 0\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 0\n  A  cnt[W1][0] = 1\n  A  inside[W1] = -1\n  A  active -> 0\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 1\n  A  cnt[W1][0] = 2\n  A  inside[W1] = -1\n  A  active -> 0\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 2\n  A  cnt[W1][0] = 3\n  A  inside[W1] = -1\n  A  active -> 0\n  B  active -> 0\n  B  active = 1\n  B  await done\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 3\n  B  cnt[W1][0] -> 3\n  A  cnt[W1][0] = 4\n  A  inside[W1] = -1\n  B  cnt[W1][0] = 0\nschedule AAAAAAAAAAAAAAAABBBAABAAB -> LOST 1 record(s): counted 3 of 4\n"
+  },
+  {
+    "label": "collector-nostep3-2x1-bounded-0",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-2x1",
+      "bounded",
+      "0"
+    ],
+    "seconds": 0.08575366700000231,
+    "returncode": 0,
+    "output": "explored 6 schedules, 0 fail  (0.02 s)\n"
+  },
+  {
+    "label": "collector-nostep3-2x1-bounded-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-2x1",
+      "bounded",
+      "1"
+    ],
+    "seconds": 0.13734212499999998,
+    "returncode": 0,
+    "output": "explored 102 schedules, 0 fail  (0.07 s)\n"
+  },
+  {
+    "label": "collector-nostep3-2x1-bounded-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-2x1",
+      "bounded",
+      "2"
+    ],
+    "seconds": 0.40676583300000146,
+    "returncode": 0,
+    "output": "explored 945 schedules, 10 fail  (0.35 s)\nfirst failing: AAAAABCCCCCCCBBBBC -> LOST 1 record(s): counted 1 of 2\n"
+  },
+  {
+    "label": "collector-nostep3-2x1-bounded-2-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-2x1",
+      "replay",
+      "AAAAABCCCCCCCBBBBC",
+      "log"
+    ],
+    "seconds": 0.06364504199999743,
+    "returncode": 0,
+    "output": "  A  active -> 0\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 0\n  A  cnt[W1][0] = 1\n  A  inside[W1] = -1\n  B  active -> 0\n  C  active -> 0\n  C  active = 1\n  C  await done\n  C  await done\n  C  cnt[W1][0] -> 1\n  C  cnt[W1][0] = 0\n  C  cnt[W2][0] -> 0\n  B  inside[W2] = 0\n  B  cnt[W2][0] -> 0\n  B  cnt[W2][0] = 1\n  B  inside[W2] = -1\n  C  cnt[W2][0] = 0\nschedule AAAAABCCCCCCCBBBBC -> LOST 1 record(s): counted 1 of 2\n"
+  },
+  {
+    "label": "collector-nostep3-2x1-bounded-3",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-2x1",
+      "bounded",
+      "3"
+    ],
+    "seconds": 1.9132855829999968,
+    "returncode": 0,
+    "output": "explored 5814 schedules, 108 fail  (1.84 s)\nfirst failing: AAAAABCCCCCCCBBBBC -> LOST 1 record(s): counted 1 of 2\n"
+  },
+  {
+    "label": "collector-nostep3-2x1-bounded-3-replay",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-nostep3-2x1",
+      "replay",
+      "AAAAABCCCCCCCBBBBC",
+      "log"
+    ],
+    "seconds": 0.06335870800000265,
+    "returncode": 0,
+    "output": "  A  active -> 0\n  A  inside[W1] = 0\n  A  cnt[W1][0] -> 0\n  A  cnt[W1][0] = 1\n  A  inside[W1] = -1\n  B  active -> 0\n  C  active -> 0\n  C  active = 1\n  C  await done\n  C  await done\n  C  cnt[W1][0] -> 1\n  C  cnt[W1][0] = 0\n  C  cnt[W2][0] -> 0\n  B  inside[W2] = 0\n  B  cnt[W2][0] -> 0\n  B  cnt[W2][0] = 1\n  B  inside[W2] = -1\n  C  cnt[W2][0] = 0\nschedule AAAAABCCCCCCCBBBBC -> LOST 1 record(s): counted 1 of 2\n"
+  },
+  {
+    "label": "checkpoint",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.Main",
+      "collector-ok-2x1",
+      "bounded",
+      "2"
+    ],
+    "seconds": 0.5356870419999993,
+    "returncode": 0,
+    "output": "explored 1334 schedules, 0 fail  (0.47 s)\n"
+  },
+  {
+    "label": "memory-plain-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "plain",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.13932987500000138,
+    "returncode": 0,
+    "output": "mode=plain samples=20,000,000\n  (0,0)          1,698    0.008%  forbidden under seq_cst\n  (0,1)      9,807,948   49.040%\n  (1,0)     10,190,345   50.952%\n  (1,1)              9    0.000%\n"
+  },
+  {
+    "label": "memory-plain-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "plain",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.14119962499999872,
+    "returncode": 0,
+    "output": "mode=plain samples=20,000,000\n  (0,0)          1,962    0.010%  forbidden under seq_cst\n  (0,1)     10,203,813   51.019%\n  (1,0)      9,794,206   48.971%\n  (1,1)             19    0.000%\n"
+  },
+  {
+    "label": "memory-plain-3",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "plain",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.14105895899999865,
+    "returncode": 0,
+    "output": "mode=plain samples=20,000,000\n  (0,0)          2,784    0.014%  forbidden under seq_cst\n  (0,1)      9,808,698   49.043%\n  (1,0)     10,188,506   50.943%\n  (1,1)             12    0.000%\n"
+  },
+  {
+    "label": "memory-acqrel-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "acqrel",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.18069674999999918,
+    "returncode": 0,
+    "output": "mode=acqrel samples=20,000,000\n  (0,0)              1    0.000%  forbidden under seq_cst\n  (0,1)     10,176,735   50.884%\n  (1,0)      9,823,200   49.116%\n  (1,1)             64    0.000%\n"
+  },
+  {
+    "label": "memory-acqrel-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "acqrel",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.16873000000000005,
+    "returncode": 0,
+    "output": "mode=acqrel samples=20,000,000\n  (0,0)              0    0.000%  forbidden under seq_cst\n  (0,1)      9,818,084   49.090%\n  (1,0)     10,181,821   50.909%\n  (1,1)             95    0.000%\n"
+  },
+  {
+    "label": "memory-acqrel-3",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "acqrel",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.1750950419999988,
+    "returncode": 0,
+    "output": "mode=acqrel samples=20,000,000\n  (0,0)              1    0.000%  forbidden under seq_cst\n  (0,1)     10,179,550   50.898%\n  (1,0)      9,820,322   49.102%\n  (1,1)            127    0.001%\n"
+  },
+  {
+    "label": "memory-volatile-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "volatile",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.47192337499999937,
+    "returncode": 0,
+    "output": "mode=volatile samples=20,000,000\n  (0,0)              0    0.000%  forbidden under seq_cst\n  (0,1)     10,026,496   50.132%\n  (1,0)      9,973,424   49.867%\n  (1,1)             80    0.000%\n"
+  },
+  {
+    "label": "memory-volatile-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "volatile",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.4743833329999987,
+    "returncode": 0,
+    "output": "mode=volatile samples=20,000,000\n  (0,0)              0    0.000%  forbidden under seq_cst\n  (0,1)      9,957,748   49.789%\n  (1,0)     10,042,058   50.210%\n  (1,1)            194    0.001%\n"
+  },
+  {
+    "label": "memory-volatile-3",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "volatile",
+      "2000",
+      "10000"
+    ],
+    "seconds": 0.4736622910000001,
+    "returncode": 0,
+    "output": "mode=volatile samples=20,000,000\n  (0,0)              0    0.000%  forbidden under seq_cst\n  (0,1)      9,926,465   49.632%\n  (1,0)     10,069,665   50.348%\n  (1,1)          3,870    0.019%\n"
+  },
+  {
+    "label": "memory-naive-1",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "naive",
+      "200000",
+      "1"
+    ],
+    "seconds": 2.216157041999999,
+    "returncode": 0,
+    "output": "mode=naive samples=200,000\n  (0,0)              0    0.000%  forbidden under seq_cst\n  (0,1)         81,821   40.911%\n  (1,0)        118,179   59.090%\n  (1,1)              0    0.000%\n"
+  },
+  {
+    "label": "memory-naive-2",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "naive",
+      "200000",
+      "1"
+    ],
+    "seconds": 2.237203625000003,
+    "returncode": 0,
+    "output": "mode=naive samples=200,000\n  (0,0)              0    0.000%  forbidden under seq_cst\n  (0,1)        123,716   61.858%\n  (1,0)         76,284   38.142%\n  (1,1)              0    0.000%\n"
+  },
+  {
+    "label": "memory-naive-3",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "naive",
+      "200000",
+      "1"
+    ],
+    "seconds": 2.2414357920000008,
+    "returncode": 0,
+    "output": "mode=naive samples=200,000\n  (0,0)              0    0.000%  forbidden under seq_cst\n  (0,1)        116,134   58.067%\n  (1,0)         83,866   41.933%\n  (1,1)              0    0.000%\n"
+  },
+  {
+    "label": "batch-small",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "acqrel",
+      "200000",
+      "100"
+    ],
+    "seconds": 2.402268624999998,
+    "returncode": 0,
+    "output": "mode=acqrel samples=20,000,000\n  (0,0)              0    0.000%  forbidden under seq_cst\n  (0,1)      8,394,142   41.971%\n  (1,0)     11,605,823   58.029%\n  (1,1)             35    0.000%\n"
+  },
+  {
+    "label": "batch-large",
+    "command": [
+      "java",
+      "-Duser.language=en",
+      "-Duser.country=US",
+      "-cp",
+      "/private/tmp/course-work.Wgr13i/lab2/student-java/out",
+      "lab2.MiniStress",
+      "acqrel",
+      "200",
+      "100000"
+    ],
+    "seconds": 0.13939349999999706,
+    "returncode": 0,
+    "output": "mode=acqrel samples=20,000,000\n  (0,0)              1    0.000%  forbidden under seq_cst\n  (0,1)      9,918,933   49.595%\n  (1,0)     10,081,028   50.405%\n  (1,1)             38    0.000%\n"
+  }
+]

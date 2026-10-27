@@ -1,0 +1,9 @@
+Date: 2026-10-26
+CPU: Apple M4 Pro
+Physical cores: 14
+Logical cores: 14
+RAM: 25769803776 bytes (24 GiB)
+OS: macOS 26.6.2 (25G83), Darwin 25.6.0, arm64
+Java: Oracle Java 21.0.9 LTS, Java HotSpot 64-Bit Server VM
+Compiler: javac --release 21
+Experiments ran sequentially, before the lab1 throughput benchmark.
