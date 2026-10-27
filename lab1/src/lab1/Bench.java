@@ -113,15 +113,19 @@ public final class Bench {
             return;
         }
 
-        if (args.length < 2 || args.length > 4) {
+        if (args.length < 2 || args.length > 5) {
             throw new IllegalArgumentException(
-                    "Bench sequential|locked|empty|striped|thread-local|double-buffered threads [seconds=5] [repeats=5]");
+                    "Bench variant threads [seconds=5] [repeats=5] [--allow-oversubscription]");
         }
         String variant = args[0];
         int workers = Integer.parseInt(args[1]);
         double seconds = args.length >= 3 ? Double.parseDouble(args[2]) : 5;
         int repeats = args.length >= 4 ? Integer.parseInt(args[3]) : 5;
-        if (workers < 1 || workers > Runtime.getRuntime().availableProcessors()) {
+        boolean allowOversubscription = args.length == 5 && args[4].equals("--allow-oversubscription");
+        if (args.length == 5 && !allowOversubscription) {
+            throw new IllegalArgumentException("Unknown option: " + args[4]);
+        }
+        if (workers < 1 || (!allowOversubscription && workers > Runtime.getRuntime().availableProcessors())) {
             throw new IllegalArgumentException("Thread count must be between 1 and the number of available processors");
         }
         if (variant.equals("sequential") && workers != 1) {

@@ -65,8 +65,12 @@ def chart(rows, destination):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--smoke', action='store_true', help='Quick smoke test; not a final benchmark')
+    parser.add_argument('--oversubscribe', action='store_true',
+                        help='Extra experiment at 8, P, P+2, 2P and 4P threads, where P is CPU count')
     args = parser.parse_args()
     mode = 'smoke' if args.smoke else 'full'
+    if args.oversubscribe:
+        mode += '-oversubscribe'
     seconds, repeats = ('0.05', '1') if args.smoke else ('5', '5')
     output = ROOT / 'results' / (datetime.now().strftime('%Y%m%d-%H%M%S-%f') + '-' + mode)
     output.mkdir(parents=True)
@@ -84,13 +88,16 @@ def main():
         (output / 'checks.txt').write_text(tests, encoding='utf-8')
         print(tests, end='', flush=True)
         points = [('sequential', 1)]
+        counts = sorted({8, processors, processors + 2, processors * 2, processors * 4}) if args.oversubscribe else [
+            t for t in (1, 2, 4, 8, 16) if t <= processors]
         for variant in ('empty', 'locked', 'striped', 'thread-local', 'double-buffered'):
-            points.extend((variant, t) for t in (1, 2, 4, 8, 16) if t <= processors)
+            points.extend((variant, t) for t in counts)
         rows = []
         raw = []
         for index, (variant, threads) in enumerate(points, 1):
             print(f'[{index}/{len(points)}] {variant}, T={threads}', flush=True)
-            run = command([java, '-cp', classes, 'lab1.Bench', variant, str(threads), seconds, repeats],
+            extra = ['--allow-oversubscription'] if args.oversubscribe else []
+            run = command([java, '-cp', classes, 'lab1.Bench', variant, str(threads), seconds, repeats, *extra],
                           timeout=float(seconds) * (int(repeats) + 1) + 120)
             (output / f'{variant}-{threads}.txt').write_text(run.stdout + '\n' + run.stderr, encoding='utf-8')
             for line in run.stdout.splitlines():

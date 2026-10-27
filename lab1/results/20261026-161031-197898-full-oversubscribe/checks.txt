@@ -1,0 +1,4 @@
+PASS: all stages: summary, percentiles, empty snapshot, copies, input bounds
+PASS: load size, range, reproducibility
+PASS: 4 writers, 10000 snapshots, final count=400000
+ALL CHECKS PASSED
